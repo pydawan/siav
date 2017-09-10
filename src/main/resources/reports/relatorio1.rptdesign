@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="author">Thiago Alexandre Martins Monteiro</property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.2.v201410272105 Build &lt;4.4.2.v20150217-1805></property>
+    <text-property name="title">Relatório 01</text-property>
+    <property name="units">in</property>
+    <text-property name="displayName">Relatório 01</text-property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="7">
+            <property name="FILELIST">http://localhost:8080/siav/webservice/itinerarios/xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="Itinerários XML" id="8">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">id</property>
+                    <text-property name="heading">id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">origem</property>
+                    <text-property name="heading">origem</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">destino</property>
+                    <text-property name="heading">destino</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">trecho</property>
+                    <text-property name="heading">trecho</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">extensao</property>
+                    <text-property name="heading">extensao</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">rodovia</property>
+                    <text-property name="heading">rodovia</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">precoIdaOnibus</property>
+                    <text-property name="heading">precoIdaOnibus</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">precoIdaVoltaOnibus</property>
+                    <text-property name="heading">precoIdaVoltaOnibus</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">precoIdaMicroOnibus</property>
+                    <text-property name="heading">precoIdaMicroOnibus</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">precoIdaVoltaMicroOnibus</property>
+                    <text-property name="heading">precoIdaVoltaMicroOnibus</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">origem</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">destino</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">trecho</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">extensao</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">rodovia</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">precoIdaOnibus</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">precoIdaVoltaOnibus</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">precoIdaMicroOnibus</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">precoIdaVoltaMicroOnibus</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">id</property>
+                    <property name="nativeName">id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">origem</property>
+                    <property name="nativeName">origem</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">destino</property>
+                    <property name="nativeName">destino</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">trecho</property>
+                    <property name="nativeName">trecho</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">extensao</property>
+                    <property name="nativeName">extensao</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">rodovia</property>
+                    <property name="nativeName">rodovia</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">precoIdaOnibus</property>
+                    <property name="nativeName">precoIdaOnibus</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">precoIdaVoltaOnibus</property>
+                    <property name="nativeName">precoIdaVoltaOnibus</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">precoIdaMicroOnibus</property>
+                    <property name="nativeName">precoIdaMicroOnibus</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">precoIdaVoltaMicroOnibus</property>
+                    <property name="nativeName">precoIdaVoltaMicroOnibus</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/itinerarios/itinerario]#:#{id;STRING;/id},{origem;STRING;/origem},{destino;STRING;/destino},{trecho;STRING;/trecho},{extensao;STRING;/extensao},{rodovia;STRING;/rodovia},{precoIdaOnibus;STRING;/precoIdaOnibus},{precoIdaVoltaOnibus;STRING;/precoIdaVoltaOnibus},{precoIdaMicroOnibus;STRING;/precoIdaMicroOnibus},{precoIdaVoltaMicroOnibus;STRING;/precoIdaVoltaMicroOnibus}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>id</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>id</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>origem</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>origem</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>destino</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>destino</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>trecho</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>trecho</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>extensao</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>extensao</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>rodovia</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>rodovia</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>precoIdaOnibus</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>precoIdaOnibus</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>precoIdaVoltaOnibus</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>precoIdaVoltaOnibus</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>precoIdaMicroOnibus</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>precoIdaMicroOnibus</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>precoIdaVoltaMicroOnibus</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>precoIdaVoltaMicroOnibus</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab-cell" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="141">
+            <property name="backgroundColor">#0000FF</property>
+            <property name="fontSize">18pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="color">#FFFFFF</property>
+            <property name="paddingTop">1pt</property>
+            <property name="paddingBottom">1pt</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">ITINERÁRIOS</text-property>
+        </label>
+        <table id="142">
+            <property name="fontFamily">"Abyssinica SIL"</property>
+            <property name="marginTop">3%</property>
+            <property name="textAlign">center</property>
+            <property name="verticalAlign">middle</property>
+            <property name="width">7.947916666666667in</property>
+            <property name="dataSet">Itinerários XML</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">id</property>
+                    <text-property name="displayName">id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">origem</property>
+                    <text-property name="displayName">origem</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["origem"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">destino</property>
+                    <text-property name="displayName">destino</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["destino"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">trecho</property>
+                    <text-property name="displayName">trecho</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["trecho"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">extensao</property>
+                    <text-property name="displayName">extensao</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["extensao"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">rodovia</property>
+                    <text-property name="displayName">rodovia</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["rodovia"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">precoIdaOnibus</property>
+                    <text-property name="displayName">precoIdaOnibus</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["precoIdaOnibus"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">precoIdaVoltaOnibus</property>
+                    <text-property name="displayName">precoIdaVoltaOnibus</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["precoIdaVoltaOnibus"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">precoIdaMicroOnibus</property>
+                    <text-property name="displayName">precoIdaMicroOnibus</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["precoIdaMicroOnibus"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">precoIdaVoltaMicroOnibus</property>
+                    <text-property name="displayName">precoIdaVoltaMicroOnibus</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["precoIdaVoltaMicroOnibus"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <structure name="toc"/>
+            <column id="199">
+                <property name="width">3.4583333333333335in</property>
+            </column>
+            <column id="200">
+                <property name="width">0.90625in</property>
+            </column>
+            <column id="202">
+                <property name="width">0.90625in</property>
+            </column>
+            <column id="203">
+                <property name="width">0.9270833333333334in</property>
+            </column>
+            <column id="204">
+                <property name="width">0.8541666666666666in</property>
+            </column>
+            <column id="205">
+                <property name="width">0.8958333333333334in</property>
+            </column>
+            <header>
+                <row id="143">
+                    <cell id="150">
+                        <label id="151">
+                            <property name="fontFamily">"KacstArt"</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="fontStyle">normal</property>
+                            <text-property name="text">TRECHO</text-property>
+                        </label>
+                    </cell>
+                    <cell id="152">
+                        <label id="153">
+                            <property name="fontFamily">"KacstArt"</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="fontStyle">normal</property>
+                            <text-property name="text">EXTENSÃO</text-property>
+                        </label>
+                    </cell>
+                    <cell id="156">
+                        <label id="157">
+                            <property name="fontFamily">"KacstArt"</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="fontStyle">normal</property>
+                            <text-property name="text">ÔNIBUS (I)</text-property>
+                        </label>
+                    </cell>
+                    <cell id="158">
+                        <label id="159">
+                            <property name="fontFamily">"KacstArt"</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="fontStyle">normal</property>
+                            <text-property name="text">ÔNIBUS (IV)</text-property>
+                        </label>
+                    </cell>
+                    <cell id="160">
+                        <label id="161">
+                            <property name="fontFamily">"KacstArt"</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="fontStyle">normal</property>
+                            <text-property name="text">MICRO-ÔNIBUS (I)</text-property>
+                        </label>
+                    </cell>
+                    <cell id="162">
+                        <label id="163">
+                            <property name="fontFamily">"KacstArt"</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="fontStyle">normal</property>
+                            <text-property name="text">MICRO-ÔNIBUS (IV)</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="164">
+                    <cell id="171">
+                        <data id="172">
+                            <property name="textAlign">justify</property>
+                            <property name="resultSetColumn">trecho</property>
+                        </data>
+                    </cell>
+                    <cell id="173">
+                        <data id="174">
+                            <property name="resultSetColumn">extensao</property>
+                        </data>
+                    </cell>
+                    <cell id="177">
+                        <data id="178">
+                            <property name="resultSetColumn">precoIdaOnibus</property>
+                        </data>
+                    </cell>
+                    <cell id="179">
+                        <data id="180">
+                            <property name="resultSetColumn">precoIdaVoltaOnibus</property>
+                        </data>
+                    </cell>
+                    <cell id="181">
+                        <data id="182">
+                            <property name="resultSetColumn">precoIdaMicroOnibus</property>
+                        </data>
+                    </cell>
+                    <cell id="183">
+                        <data id="184">
+                            <property name="resultSetColumn">precoIdaVoltaMicroOnibus</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="185">
+                    <cell id="189"/>
+                    <cell id="190"/>
+                    <cell id="192"/>
+                    <cell id="193"/>
+                    <cell id="194"/>
+                    <cell id="195"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

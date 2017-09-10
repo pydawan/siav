@@ -1,0 +1,10 @@
+<select
+    class="form-control selectpicker"
+    id="autorizacao.veiculo.modelo"
+    name="autorizacao.veiculo.modelo"
+    data-header="- Selecione o modelo do veículo -"
+    data-none-selected-text="Nenhum modelo de veículo selecionado"
+    data-live-search="true"
+    ng-model="autorizacao.veiculo.modelo"
+    ng-options="modelo as (modelo.nome + ' / ' + modelo.fabricante.nome) | uppercase for modelo in modelosVeiculo | orderBy:nome track by modelo.id">
+</select>

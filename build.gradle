@@ -1,0 +1,293 @@
+apply plugin: 'eclipse'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+version = '1.0'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'SIAV - Sistema de Autorização de Viagens', 'Implementation-Version': 1.0
+    }
+}
+
+eclipse {
+    wtp {
+        facet {
+            facet name: 'jst.web', version: '3.0'
+            facet name: 'java', version: '1.8'
+            facet name: 'wst.jsdt.web', version: '1.0'
+        }
+    }
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+
+    // Weld
+    compile group: 'org.jboss.weld.servlet', name: 'weld-servlet-core', version: '2.1.2.Final'
+    compile group: 'org.jboss.weld', name: 'weld-core-impl', version: '2.1.2.Final'
+
+    // VRaptor 4
+    compile group: 'br.com.caelum', name: 'vraptor', version: '4.2.0-RC5'
+
+    // VRaptor Java 8
+    compile group: 'br.com.caelum.vraptor', name: 'vraptor-java8', version: '4.0.0.Final'
+
+    // VRaptor Joda Time
+    compile group: 'br.com.caelum.vraptor', name: 'vraptor-jodatime', version: '4.1.0-RC2'
+
+    // Vraptor Quartz Job
+//    compile group: 'br.com.caelum.vraptor', name: 'vraptor-quartzjob', version: '4.0.6'
+
+    // Java Assist
+    compile group: 'org.javassist', name: 'javassist', version: '3.18.1-GA'
+
+    // File Upload
+    compile group: 'commons-fileupload', name: 'commons-fileupload', version: '1.3'
+
+    // Caelum Stella
+    compile group: 'br.com.caelum.stella', name: 'caelum-stella-core', version: '2.1.2'
+    compile group: 'br.com.caelum.stella', name: 'caelum-stella-bean-validation', version: '2.1.2'
+    compile group: 'br.com.caelum.stella', name: 'caelum-stella-faces', version: '2.1.2'
+    compile group: 'br.com.caelum.stella', name: 'caelum-stella-hibernate-user-types', version: '2.1.2'
+    compile group: 'br.com.caelum.stella', name: 'caelum-stella-boleto', version: '2.1.2'
+
+    // Fixture Factory
+    compile group: 'br.com.six2six', name: 'fixture-factory', version: '3.0.0'
+
+    // FlywayDB - database migrations
+    compile group: 'org.flywaydb', name: 'flyway-core', version: '3.2.1'
+
+    // Selenium
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.45.0'
+
+    // Selenide
+    compile group: 'com.codeborne', name: 'selenide', version: '2.19'
+
+    // jsoup
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.8.2'
+
+    // javaslang
+    compile group: 'com.javaslang', name: 'javaslang', version: '1.2.1'
+
+    // jool
+    compile group: 'org.jooq', name: 'jool', version: '0.9.6'
+
+    // Apache PDFBox
+    compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '1.8.9'
+
+    // wget
+    compile group: 'com.github.axet', name: 'wget', version: '1.2.12'
+
+    // Geradores de dados
+
+    // Fixture Factory
+    compile group: 'br.com.six2six', name: 'fixture-factory', version: '3.0.0'
+
+    // Lorem - Lorem Ipsum Generator
+    compile group: 'com.thedeanda', name: 'lorem', version: '1.2'
+
+    // Apache Commons
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+    compile group: 'org.apache.commons', name: 'commons-exec', version: '1.3'
+    compile group: 'org.apache.commons', name: 'commons-email', version: '1.3.3'
+
+    // Phantom JS
+    compile group: 'net.anthavio', name: 'phanbedder-1.9.8', version: '1.0.0'
+    compile group: 'com.codeborne', name: 'phantomjsdriver', version: '1.2.1'
+
+    // Hibernate
+    compile 'org.hibernate:hibernate-validator:5.1.1.Final'
+    compile 'org.hibernate:hibernate-validator-cdi:5.1.1.Final'
+
+    // MySQL
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.31'
+
+    // C3P0 - Database Connection Pool Manager
+    compile group: 'com.mchange', name: 'c3p0', version: '0.9.5.1'
+
+    // Servlet
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+
+    // JSTL (Java Standard Tag Library)
+    compile group: 'jstl', name: 'jstl', version: '1.2'
+
+    // Gson
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.2.4'
+
+    // XStream
+    compile group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.4'
+
+    // Tiny Log
+    compile group: 'org.tinylog', name: 'tinylog', version: '1.0'
+
+    compile group: 'org.tinylog', name: 'log4j-facade', version: '1.0.1'
+
+    compile group: 'org.tinylog', name: 'slf4j-binding', version: '1.0.1'
+
+    // Lombok
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.4'
+
+    // reCAPTCHA
+    compile group: 'com.google.code.maven-play-plugin.net.tanesha.recaptcha4j', name: 'recaptcha4j', version: '0.0.8'
+
+    // Pebble Template Engine
+    compile group: 'com.mitchellbosecke', name: 'pebble', version: '1.5.1'
+
+    // Pollexor - Java Thumbor client
+    compile group: 'com.squareup', name: 'pollexor', version: '2.0.3'
+
+    // Apache Shiro
+    compile group: 'org.apache.shiro', name: 'shiro-core', version: '1.2.4'
+
+    compile group: 'org.apache.shiro', name: 'shiro-web', version: '1.2.4'
+
+    compile group: 'br.com.caelum.vraptor', name: 'vraptor-shiro', version: '4.0.0-RC2'
+
+    // LDAP Apache Directory
+    compile group: 'org.apache.directory.api', name: 'api-all', version: '1.0.0-M31'
+
+    // Joda Time
+    compile group: 'joda-time', name: 'joda-time', version: '2.8.2'
+
+    // Jersey and Jackson
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.21'
+
+    // Jersey Client
+    compile group: 'com.sun.jersey', name: 'jersey-client', version: '1.19'
+
+    // Quartz Scheduler
+//    compile group: 'org.quartz-scheduler', name: 'quartz', version: '2.2.1'
+
+    // Quartz Jobs
+//    compile group: 'org.quartz-scheduler', name: 'quartz-jobs', version: '2.2.1'
+
+    // Fixture Factory
+    compile group: 'br.com.six2six', name: 'fixture-factory', version: '3.0.0'
+
+    // Apache POI
+    compile group: 'org.apache.poi', name: 'poi', version: '3.12'
+
+    // Open CSV
+    compile group: 'com.opencsv', name: 'opencsv', version: '3.3'
+
+    // WebJars - Web Dependencies
+
+    // JQuery UI
+    compile group: 'org.webjars', name: 'jquery-ui', version: '1.11.4'
+
+    // JQuery Validation
+    compile group: 'org.webjars.bower', name: 'jquery-validation', version: '1.14.0'
+
+    // JQuery Masked Input
+    compile group: 'org.webjars.bower', name: 'jquery-maskedinput', version: '1.4.1'
+
+    // JQuery Form Plugin
+    compile group: 'org.webjars', name: 'jquery-form', version: '3.51'
+
+    // JQuery File Upload
+    compile group: 'org.webjars', name: 'jquery-file-upload', version: '9.10.1'
+
+    // BR Validation
+    compile group: 'org.webjars.bower', name: 'br-validations', version: '0.2.4'
+
+    // Normalize CSS
+    compile group: 'org.webjars', name: 'normalize.css', version: '3.0.2'
+
+    // Bootstrap 3
+    compile group: 'org.webjars.bower', name: 'bootstrap', version: '3.3.5'
+
+    // Bootstrap Form Helpers
+    compile group: 'org.webjars.bower', name: 'bootstrap-form-helpers', version: '2.3.0'
+
+    // Bootstrap Date Picker
+    compile group: 'org.webjars', name: 'bootstrap-datepicker', version: '1.4.0'
+
+    // Bootstrap Select
+    compile group: 'org.webjars', name: 'bootstrap-select', version: '1.6.3'
+
+    // Bootstrap Multiselect
+    compile group: 'org.webjars', name: 'bootstrap-multiselect', version: '0.9.13'
+
+    // Font Awesome
+    compile group: 'org.webjars', name: 'font-awesome', version: '4.3.0-3'
+
+    // Ionicons
+    compile group: 'org.webjars', name: 'ionicons', version: '2.0.1'
+    
+    // Typehead.js
+    compile group: 'org.webjars.bower', name: 'bootstrap3-typeahead', version: '3.1.1'
+
+    // Faker.js
+    compile group: 'org.webjars.bower', name: 'Faker', version: '2.1.5'
+
+    // jQuery Table Sorter
+    compile group: 'org.webjars', name: 'tablesorter', version: '2.17.8'
+
+    // Angular JS
+    compile group: 'org.webjars.bower', name: 'angularjs', version: '1.4.7'
+
+    // Angular JS i18n
+    compile group: 'org.webjars.bower', name: 'angular-i18n', version: '1.4.7'
+
+    // Bootstrap Show Password
+    compile group: 'org.webjars.bower', name: 'bootstrap-show-password', version: '1.0.2'
+
+    // Jedi ORM
+    compile files('./src/main/webapp/WEB-INF/lib/jedi-orm.jar')
+
+    // Bootstrap.jsp
+    compile files('./src/main/webapp/WEB-INF/lib/bootstrap.jsp.jar')
+
+    // VRaptor Paperclip
+    compile files('./src/main/webapp/WEB-INF/lib/vraptor-paperclip.jar')
+
+    // JUnit
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+
+    // AssertJ
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.0.0'
+
+}
+
+test {
+    systemProperties 'property': 'value'
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.h2database:h2:1.3.170'
+        classpath 'org.flywaydb:flyway-gradle-plugin:3.2.1'
+    }
+}
+
+apply plugin: 'org.flywaydb.flyway'
+apply plugin: 'java'
+
+flyway {
+    url = 'jdbc:h2:file:target/foobar'
+    user = 'sa'
+}
+
+configurations.all {
+    exclude module: 'slf4j-log4j12'
+}

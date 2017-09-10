@@ -1,0 +1,10 @@
+<select
+    class="form-control selectpicker"
+    id="autorizacao.veiculo.tipo"
+    name="autorizacao.veiculo.tipo"
+    data-header="- Selecione o tipo do veículo -"
+    data-none-selected-text="Nenhum tipo de veículo selecionado"
+    data-live-search="false"
+    ng-model="autorizacao.veiculo.tipo"
+    ng-options="tipo as tipo | uppercase for tipo in tiposVeiculo | orderBy:tipo track by tipo">
+</select>

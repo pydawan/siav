@@ -1,0 +1,17 @@
+<div class="input-group">
+    <select
+        class="form-control selectpicker"
+        id="autorizacao.viagem.tipo"
+        name="autorizacao.viagem.tipo"
+        data-header="- Selecione o tipo de viagem -"
+        data-none-selected-text="Nenhum tipo de viagem selecionado"
+        data-live-search="false"
+        ng-model="autorizacao.viagem.tipo"
+        ng-options="tipo as tipo | uppercase for tipo in tiposViagem | orderBy:tipo track by tipo">
+    </select>
+    <span class="input-group-addon"> <span
+        class="glyphicon glyphicon-retweet"
+        data-toggle="tooltip"
+        title="Tipo de viagem" />
+    </span>
+</div>

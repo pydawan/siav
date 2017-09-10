@@ -1,0 +1,10 @@
+<select
+    class="form-control selectpicker"
+    id="autorizacao.veiculo.modelo.fabricante"
+    name="autorizacao.veiculo.modelo.fabricante"
+    data-header="- Selecione o fabricante do veículo -"
+    data-none-selected-text="Nenhum fabricante de veículo selecionado"
+    data-live-search="true"
+    ng-model="autorizacao.veiculo.modelo.fabricante"
+    ng-options="fabricante as fabricante.nome for fabricante in fabricantesVeiculo | orderBy:nome track by fabricante.id">
+</select>

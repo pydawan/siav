@@ -1,0 +1,452 @@
+@CHARSET "UTF-8";
+
+body {
+    padding-top: 70px;
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.tooltip-inner {
+    background-color: #295374;
+    color: white;
+    max-width: none;
+    white-space: pre;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #295374;
+}
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: #295374;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #295374;
+}
+
+.tooltip.left .tooltip-arrow {
+    border-left-color: #295374;
+}
+
+.sigla-sistema:hover {
+    text-shadow: 0 0 1px #fff;
+}
+
+.error {
+    color: #C05042;
+    font-size: 10pt;
+}
+
+a.acao {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+input.readonly {
+    background-color: #f5f5f5 !important;
+}
+
+.glyphicon {
+    color: black !important;
+}
+
+.datepicker table tr td.active:hover, 
+.datepicker table tr td.active:hover:hover, 
+.datepicker table tr td.active.disabled:hover, 
+.datepicker table tr td.active.disabled:hover:hover, 
+.datepicker table tr td.active:active, 
+.datepicker table tr td.active:hover:active, 
+.datepicker table tr td.active.disabled:active, 
+.datepicker table tr td.active.disabled:hover:active, 
+.datepicker table tr td.active.active, 
+.datepicker table tr td.active:hover.active, 
+.datepicker table tr td.active.disabled.active, 
+.datepicker table tr td.active.disabled:hover.active, 
+.datepicker table tr td.active.disabled, 
+.datepicker table tr td.active:hover.disabled, 
+.datepicker table tr td.active.disabled.disabled, 
+.datepicker table tr td.active.disabled:hover.disabled, 
+.datepicker table tr td.active[disabled], 
+.datepicker table tr td.active:hover[disabled], 
+.datepicker table tr td.active.disabled[disabled], 
+.datepicker table tr td.active.disabled:hover[disabled] {
+    background-image: none;
+    background-color: green;
+    font-weight: normal;
+    color: white;
+    text-shadow: none;
+}
+
+.datepicker table tr td.today, 
+.datepicker table tr td.today:hover, 
+.datepicker table tr td.today.disabled, 
+.datepicker table tr td.today.disabled:hover {
+    background-color: #295374;
+    background-image: -moz-linear-gradient(center top , #295374, #295374);
+    background: -webkit-linear-gradient(top, #295374 0%, #295374 100%);
+    background: -o-linear-gradient(top, #295374 0%, #295374 100%);
+    background: -ms-linear-gradient(top, #295374 0%, #295374 100%);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: white !important;
+    font-weight: normal;
+}
+
+.selectpicker * {
+    color: green !important;
+}
+
+.multiselect {
+    color: green !important;
+    text-align: left;
+}
+
+.multiselect-container {
+    width: 100% !important;
+}
+
+.multiselect b.caret {
+    position: absolute;
+    left: 96%;
+    top: 50%;
+}
+
+.multiselect-search * {
+    color: green !important;
+}
+
+.input-group-addon {
+    background-color: white;
+}
+
+.ionicons {
+    color: black;
+}
+
+.fa {
+    color: black;
+}
+
+btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.nome-arquivo {
+    margin-top: 7px;
+}
+
+/*
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    text-transform: uppercase;
+}
+/*
+
+/* Correção para sobreposição do menu dropdown */
+.input-group .bootstrap-select.form-control {
+    z-index: inherit;
+}
+
+table tbody tr td a.acao {
+    text-transform: uppercase;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.container.login {
+    padding-top: 5%;
+}
+
+.panel-login {
+    border-color: #ccc;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+    color: #295374;
+    background-color: #fff;
+    border-color: #fff;
+    text-align:center;
+}
+.panel-login>.panel-heading a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active {
+    color: #5EA658;
+    font-size: 18px;
+}
+.panel-login>.panel-heading hr {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    clear: both;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],
+.panel-login input[type="email"],
+.panel-login input[type="password"] {
+    height: 45px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+    outline:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #ccc;
+}
+.btn-login {
+    background-color: #295374;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #295380;
+}
+.btn-login:hover,
+.btn-login:focus {
+    color: #fff;
+    background-color: #346C98;
+    border-color: #346C98;
+}
+
+#tabela-itinerarios th:nth-child(4),
+#tabela-itinerarios td:nth-child(4),
+#tabela-itinerarios th:nth-child(5),
+#tabela-itinerarios td:nth-child(5),
+#tabela-itinerarios th:nth-child(6),
+#tabela-itinerarios td:nth-child(6) {
+    text-align: center;
+}
+
+.action {
+    text-decoration: none !important;
+}
+
+.action.destaque:hover {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12.25pt;
+}
+
+table#usuarios th,
+table#usuarios td,
+table#perfis th,
+table#perfis td,
+table#permissoes th,
+table#permissoes td,
+table#distancias th,
+table#distancias td,
+table#itinerarios th,
+table#itinerarios td,
+table#roteiro-viagem th,
+table#roteiro-viagem td {
+    text-align: center;
+}
+
+table#itinerarios tbody td:nth-child(2),
+table#distancias tbody td:nth-child(2),
+table#roteiro-viagem tbody td:nth-child(2) {
+    text-align: left;
+}
+
+table#usuarios tbody tr:hover,
+table#perfis tbody tr:hover,
+table#permissoes tbody tr:hover,
+table#itinerarios tbody tr:hover,
+table#roteiro-viagem tbody tr:hover,
+table#roteiros tbody tr:hover {
+    font-weight: bold;
+    color: #295374;
+}
+
+ul.error-list {
+    color:  #A94442 !important;
+}
+
+ul.error-list li span {
+    color: #A94442 !important;
+}
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover {
+    background: none;
+}
+
+.typeahead .active > a {
+    color: #3D566A;
+}
+
+.typeahead *:hover {
+    background-color: #3D566A;
+    color: white;
+}
+
+.dropdown-menu .selectpicker .selected .active,
+.dropdown-menu .selectpicker .selected .active:hover {
+    background: none;
+}
+
+table#roteiros thead th,
+table#roteiros tbody tr {
+    text-align: center;
+}
+
+table#roteiros tbody td:nth-child(2) {
+    text-align: left;
+}
+
+table#autorizacao {
+    table-layout: fixed !important; /* evita que as colunas sejam fluidas */
+    word-wrap: break-word !important;
+    border: none !important;
+    border-spacing: 0;
+}
+
+table#autorizacao table {
+    background-color: white;
+}
+
+table#autorizacao * {
+    border: none !important;
+}
+
+table#autorizacao {
+    border: 1px solid #51696E !important;
+}
+
+table#autorizacao td {
+    border: 1px solid #51696E !important;
+    margin: 0;
+    padding: 0;
+}
+
+table#identificacao-veiculo tr td:first-child {
+    border-left: none !important;
+}
+
+table#identificacao-veiculo tr td:last-child {
+    border-right: none !important;
+}
+
+table#identificacao-veiculo tr:last-child td {
+    border-bottom: none !important;
+}
+
+table#roteiro-viagem tr td:first-child {
+    border-left: none !important;
+}
+
+table#roteiro-viagem tr td:last-child {
+    border-right: none !important;
+}
+
+table#observacao-nf tr td:first-child {
+    border-left: none !important;
+}
+
+table#observacao-nf tr td:last-child {
+    border-right: none !important;
+}
+
+table#roteiro-viagem tr:last-child td {
+    border-bottom: none !important;
+}
+
+table#informacoes-viagem tr:last-child td {
+    border-bottom: none !important;
+}
+
+table#nota-fiscal tr:last-child td {
+    border-bottom: none !important;
+}
+
+table#boleto-bancario tr:last-child td {
+    border-bottom: none !important;
+}
+
+table#observacao-nf tr td {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+table#autorizacao thead th {
+    height: 25px !important;
+}
+
+p.celula {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+p.celula.center {
+    text-align: center;
+}
+
+p.celula.middle {
+    vertical-align: middle;
+}
+
+p.titulo {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+p.resolucao-agr {
+    text-align: justify;
+    text-indent: 1em;
+}
